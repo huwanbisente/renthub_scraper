@@ -2,12 +2,14 @@
 
 This Python project extracts real estate listings from the RentHub GraphQL API and processes the data into a flat structure before saving it as an Excel file. The script allows configuration via a JSON file (`config.json`) to specify API details, payload, headers, and output settings.
 
+
 ## Project Structure
 
 . ├── main.py # The main Python script to run the project ├── config.json # JSON configuration file for API and output settings ├── requirements.txt # Python dependencies └── README.md # Project documentation
 
 markdown
 Copy code
+
 
 ## Prerequisites
 
@@ -16,24 +18,26 @@ Make sure you have the following installed:
 - Python 3.x
 - `pip` (Python package installer)
 
+
 ## Installation
 
 1. **Clone the repository**:
 
    ```bash
    git clone https://github.com/yourusername/renthub-listings-extraction.git
-   cd renthub-listings-extraction
-Create a virtual environment (optional but recommended):
+   cd renthub-listings-extraction|
 
-bash
-Copy code
+2. Create a virtual environment (optional but recommended):
+
+bash codes
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
-Install the required packages:
 
-bash
-Copy code
+3. Install the required packages:
+
+bash codes
 pip install -r requirements.txt
+
 
 ## Configuration
 
@@ -43,16 +47,13 @@ API details such as the request URL, headers, and payload.
 Output settings like the name of the Excel file.
 
 Usage
-Run the script:
+1. Run the script:
 
-bash
-Copy code
+bash codes
 python main.py
-The script will make a POST request to the RentHub API, retrieve the listings data, flatten the JSON response, and save the data to an Excel file as defined in the config.json file.
 
-## Output
+2. The script will make a POST request to the RentHub API, retrieve the listings data, flatten the JSON response, and save the data to an Excel file as defined in the config.json file.
 
-The script will output an Excel file containing the listings data with the following columns:
 
 ## Output
 
@@ -78,20 +79,22 @@ You can modify the payload in the config.json file to filter by different zoneId
 
 The Python dependencies for this project are listed in requirements.txt:
 
-txt
-Copy code
-requests
-pandas
-openpyxl
+
+- requests
+- pandas
+- openpyxl
 
 Install these dependencies using:
 
-bash
-Copy code
+bash codes
 pip install -r requirements.txt
-License
-This project is licensed under the MIT License. See the LICENSE file for more information.
 
-Acknowledgments
+
+## License
+This project does not currently have a license. 
+Please note that until a license is added, all rights are reserved, and no permissions are granted for use, distribution, or modification of this code.
+
+
+## License
 RentHub API for providing the data
 Python community for the awesome tools and libraries
