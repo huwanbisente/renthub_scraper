@@ -1,0 +1,53 @@
+{
+  "api_details": {
+    "url": "https://api.renthub.in.th/graphql",
+    "headers": {
+      "accept": "*/*",
+      "accept-language": "en-US,en;q=0.9",
+      "content-type": "application/json",
+      "locale": "en",
+      "origin": "https://www.renthub.in.th",
+      "priority": "u=1, i",
+      "referer": "https://www.renthub.in.th/",
+      "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-site",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    },
+    "payload": {
+      "operationName": "listings",
+      "variables": {
+        "ListingSearchConsumerAttributes": {
+          "zoneIds": [
+            "557",
+            "476",
+            "555",
+            "556",
+            "558",
+            "559",
+            "568"
+          ],
+          "shortTerm": "SIX_MONTH",
+          "rentalType": "MONTHLY"
+        },
+        "locale": "en",
+        "page": 1,
+        "perPage": 300,
+        "order": "REFRESHED_AT"
+      },
+      "extensions": {
+        "persistedQuery": {
+          "version": 1,
+          "sha256Hash": "a38b30b7a5fe7cdd940be863068af8fc9ece6906032571f478096e1cf0e8623e"
+        }
+      }
+    }
+  },
+  "output": {
+    "file_name": "listings_data.xlsx",
+    "file_type": "excel"
+  }
+}
