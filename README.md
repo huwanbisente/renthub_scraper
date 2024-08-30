@@ -5,11 +5,31 @@ This Python project extracts real estate listings from the RentHub GraphQL API a
 
 ## Project Structure
 
-. ├── main.py # The main Python script to run the project ├── config.json # JSON configuration file for API and output settings ├── requirements.txt # Python dependencies └── README.md # Project documentation
+├── main.py # The main Python script to run the project 
+├── config.json # JSON configuration file for API and output settings 
+├── requirements.txt # Python dependencies 
+├── README.md # Project documentation 
+├── .gitignore # Git ignore file to exclude files/folders from version control 
+├── venv/ # Virtual environment directory (usually excluded from version control) 
+├── data/ # Directory for storing input and output data files (e.g., Excel files) 
+│ └── example.xlsx # Example data file (optional) 
 
-markdown
-Copy code
 
+### Explanation of Each Component
+
+- **`main.py`**: The main script that contains the logic for running the project.
+- **`config.json`**: Configuration file for API settings, payload, and output settings.
+- **`requirements.txt`**: Lists the Python dependencies required to run the project.
+- **`README.md`**: Documentation file providing an overview, installation instructions, usage, and other relevant information.
+- **`.gitignore`**: Specifies files and directories to be ignored by Git (e.g., virtual environments, compiled files).
+- **`venv/`**: Directory for the virtual environment (should be excluded from version control).
+- **`data/`**: Directory to store data files, such as input data and output files (e.g., Excel files). This directory may include example data files.
+- **`src/`**: Directory for the source code, which may include multiple Python files and packages. This helps in organizing code into logical modules.
+  - **`__init__.py`**: Makes the `src` directory a Python package (optional but useful for imports).
+  - **`utils.py`**: Contains utility functions and helper methods.
+- **`tests/`**: Directory for unit tests and other test cases.
+  - **`__init__.py`**: Makes the `tests` directory a Python package (optional but useful for imports).
+  - **`test_main.py`**: Contains unit tests for the `main.py` script.
 
 ## Prerequisites
 
