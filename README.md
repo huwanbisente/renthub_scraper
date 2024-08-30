@@ -44,14 +44,14 @@ Make sure you have the following installed:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/renthub-listings-extraction.git
-   cd renthub-listings-extraction|
+     git clone https://github.com/yourusername/renthub-listings-extraction.git
+     cd renthub-listings-extraction|
 
 2. Create a virtual environment (optional but recommended):
 
-bash codes
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+ ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use: venv\Scripts\activate|
 
 3. Install the required packages:
 
